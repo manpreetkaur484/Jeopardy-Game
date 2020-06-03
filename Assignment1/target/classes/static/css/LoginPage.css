@@ -1,0 +1,33 @@
+  body{
+     margin: 0px; 
+    background-color: skyblue;
+     background-repeat:no-repeat;
+     background-position: center;
+     background-size: 100% 100%;
+  }
+  #box{
+    background-color: skyblue;
+    height: 18%; 
+    width: 100%;
+   /* position: absolute;
+    top: 10px;*/
+	
+  }
+p{
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#quit,#answer{
+  height:40px;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+  background-color: #2471A3;
+  }
+  #quit{
+    width:100px;
+  }
+  #answer{
+    width:120px;
+  }

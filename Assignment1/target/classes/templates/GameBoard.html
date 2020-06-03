@@ -1,0 +1,196 @@
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+    <head>
+        <title>Assignment1-ManpreetKaur</title>
+        
+        <link rel="stylesheet" type="text/css" media="all"
+         href="../static/css/GameBoard.css"
+      th:href="@{/css/GameBoard.css}" >
+        
+    </head>
+
+<body>
+<!--  <form method="Get" action="">-->
+ 
+          <div class="row">
+               <div id="top">
+               
+              <p id="left"   th:text=" 'Welcome ' + ${session.player.name}"><font size= 7>Welcome XYZ</font></p>
+              <p id="right"   th:text=" 'Winnings: $' + ${session.player.score}"><font size= 7>Winnings : $</font></p>
+              
+               </div>
+
+                <div id = "bottom">
+              <table id="table" align="center">
+              <tr>
+              <th class="heading">Food</th>
+              <th class="heading">Science</th>
+              <th class="heading">History</th>
+              <th class="heading">Spelling</th>
+              <th class="heading">Synonyms</th>
+          </tr>
+          <tr>
+               <td class="row1"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Food"/>
+                                <input type="hidden" name="value" value="100"/>
+                                <input type="submit" value="100" class="new1" />
+                                </form>
+               </td>
+               <td class="row1"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Science"/>
+                                <input type="hidden" name="value" value="100"/>
+                                <input type="submit" value="100" class="new1"/>
+                                </form>
+               </td>
+               <td class="row1"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="History"/>
+                                <input type="hidden" name="value" value="100"/>
+                                <input type="submit" value="100" class="new1"/>
+                                </form>
+               </td>
+               <td class="row1"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Spelling"/>
+                                <input type="hidden" name="value" value="100"/>
+                                <input type="submit" value="100" class="new1"/>
+                                </form>
+                </td>
+               <td class="row1"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Synonyms"/>
+                                <input type="hidden" name="value" value="100"/>
+                                <input type="submit" value="100" class="new1"/>
+                                </form>
+               </td>
+          </tr>
+          <tr>
+               <td class="row2"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Food"/>
+                                <input type="hidden" name="value" value="200"/>
+                                <input type="submit" value="200" class="new2"/>
+                                </form>
+                </td>
+               <td class="row2"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Science"/>
+                                <input type="hidden" name="value" value="200"/>
+                                <input type="submit" value="200" class="new2"/>
+                                </form>
+               </td>
+               <td class="row2"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="History"/>
+                                <input type="hidden" name="value" value="200"/>
+                                <input type="submit" value="200" class="new2"/>
+                                </form>
+               </td>
+               <td class="row2"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Spelling"/>
+                                <input type="hidden" name="value" value="200"/>
+                                <input type="submit" value="200" class="new2"/>
+                                </form>
+                </td>
+               <td class="row2"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Synonyms"/>
+                                <input type="hidden" name="value" value="200"/>
+                                <input type="submit" value="200" class="new2"/>
+                                </form>
+               </td>
+          </tr>
+          <tr>
+               <td class="row3"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Food"/>
+                                <input type="hidden" name="value" value="300"/>
+                                <input type="submit" value="300" class="new3"/>
+                                </form>
+                </td>
+               <td class="row3"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Science"/>
+                                <input type="hidden" name="value" value="300"/>
+                                <input type="submit" value="300" class="new3"/>
+                                </form>
+               </td>
+               <td class="row3"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="History"/>
+                                <input type="hidden" name="value" value="300"/>
+                                <input type="submit" value="300" class="new3"/>
+                                </form>
+               </td>
+               <td class="row3"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Spelling"/>
+                                <input type="hidden" name="value" value="300"/>
+                                <input type="submit" value="300" class="new3"/>
+                                </form>
+                </td>
+               <td class="row3"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Synonyms"/>
+                                <input type="hidden" name="value" value="300"/>
+                                <input type="submit" value="300" class="new3"/>
+                                </form>
+               </td>
+          </tr>
+          <tr>
+               <td class="row4"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Food"/>
+                                <input type="hidden" name="value" value="400"/>
+                                <input type="submit" value="400" class="new4"/>
+                                </form>
+                </td>
+               <td class="row4"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Science"/>
+                                <input type="hidden" name="value" value="400"/>
+                                <input type="submit" value="400" class="new4"/>
+                                </form>
+               </td>
+               <td class="row4"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="History"/>
+                                <input type="hidden" name="value" value="400"/>
+                                <input type="submit" value="400" class="new4"/>
+                                </form>
+               </td>
+               <td class="row4"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Spelling"/>
+                                <input type="hidden" name="value" value="400"/>
+                                <input type="submit" value="400" class="new4"/>
+                                </form>
+                </td>
+               <td class="row4"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Synonyms"/>
+                                <input type="hidden" name="value" value="400"/>
+                                <input type="submit" value="400" class="new4"/>
+                                </form>
+               </td>
+          </tr>
+          <tr>
+               <td class="row5"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Food"/>
+                                <input type="hidden" name="value" value="500"/>
+                                <input type="submit" value="500" class="new5"/>
+                                </form>
+                </td>
+               <td class="row5"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Science"/>
+                                <input type="hidden" name="value" value="500" />
+                                <input type="submit" value="500" class="new5"/>
+                                </form>
+               </td>
+               <td class="row5"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="History"/>
+                                <input type="hidden" name="value" value="500"/>
+                                <input type="submit" value="500" class="new5"/>
+                                </form>
+               </td>
+               <td class="row5"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Spelling"/>
+                                <input type="hidden" name="value" value="500"/>
+                                <input type="submit" value="500" class="new5"/>
+                                </form>
+                </td>
+               <td class="row5"><form action="/pickQuestion">
+                                <input type="hidden" name="category" value="Synonyms"/>
+                                <input type="hidden" name="value" value="500"/>
+                                <input type="submit" value="500" class="new5"/>
+                                </form>
+               </td>
+          </tr>
+     </table></div>
+    
+    </div>
+    <!--  </form>-->
+</body>
+</html>

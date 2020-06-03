@@ -1,0 +1,61 @@
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+    <head>
+        <title>Question Page</title>
+        <link rel="stylesheet" type="text/css" media="all"
+              href="../static/css/QuestionPage.css"
+              th:href="@{/css/QuestionPage.css}" >
+    </head>
+<body>    
+    <div class ="row">
+    
+    <div id="top">
+               
+              <p id="left"   th:text="${session.question.category} + ' Value: $' + ${session.question.value}"><font size= 7>Synoymns</font></p>
+              <p id="right"   th:text=" 'Winnings: $' + ${session.player.score}"><font size= 7>Winnings $0</font></p>
+              
+    </div>
+        <table id="table", align="center">
+        
+            <tr id ="question">
+               <td th:text="${session.question.question}" colspan="2"> ABC</td>
+           </tr>
+          
+           <tr>
+           
+              <td>
+                   <form action="answerQuestion">
+                         <input type="hidden" name="choice" th:value="${session.question.answer1}"/>
+                         <input type="SUBMIT" th:value="${session.question.answer1}"/> 
+                   </form>
+              </td>
+              <td>
+                   <form action="answerQuestion">
+                          <input type="hidden" name="choice" th:value="${session.question.answer2}"/>
+                          <input type="SUBMIT" th:value="${session.question.answer2}"/> 
+                   </form>
+               </td>
+           </tr>
+           <tr>
+                <td>
+                     <form action="answerQuestion">
+                          <input type="hidden" name="choice" th:value="${session.question.answer3}"/>
+                          <input type="SUBMIT" th:value="${session.question.answer3}"/>
+                     </form>
+                </td>
+                <td>
+                    <form action="answerQuestion">
+                          <input type="hidden" name="choice" th:value="${session.question.answer4}"/>
+                          <input type="SUBMIT" th:value="${session.question.answer4}"/>
+                    </form>
+               </td>
+           </tr>
+           <!--  
+           <tr>
+               <td> <input type ="submit" value="Quit" id="quit"></td>
+               <td> <input type="submit" value="Submit Answer" id="answer"></td>
+           </tr>-->
+       </table>
+       </div>
+
+</body>
+</html>

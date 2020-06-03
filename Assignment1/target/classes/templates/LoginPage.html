@@ -1,0 +1,29 @@
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+    <head>
+        <title>Login</title>
+        
+        <link rel="stylesheet" type="text/css" media="all"
+              href="../static/css/LoginPage.css"
+              th:href="@{/css/LoginPage.css}" >
+    </head>
+    
+    <body>
+	<figure id="image" align="center">
+    <img src="../static/images/image.jpg" height="600px" width="100%"
+     th:src="@{/images/image.jpg}" />
+    </figure>
+          <form method="Get" action="add">
+               <div  id="box">
+              
+					 <center>
+                       <p> Please Enter Your Name: 
+                         <input type ="text" name="name" required/></p>
+                         <br>
+                         <input type ="submit" value="Quit" id="quit"/>
+                         <input type="submit" value="Submit" id="answer"/>
+												</center>
+							 </div>
+         </form>
+    </body>
+</html>
+
